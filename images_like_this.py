@@ -165,7 +165,7 @@ def main( argv ):
 
     # -------------------------------------------
     if cfg.collage:
-        collage = Collage( make_file_specs( cfg.images, test_images[predicted==1] ) )
+        collage = Collage( make_file_specs( cfg.images, test_images[ predicted == 1 ] ) )
         collage.add_title( 'Results' )
         collage.show()
         collage.save_to_file( 'predicted_' + topic + '.png' )
